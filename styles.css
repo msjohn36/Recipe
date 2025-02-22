@@ -1,0 +1,93 @@
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+
+/* --------------------GLOBAL STYLES (mobile first/small 414px) --------------------*/
+ /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
+  /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index:5;
+}
+nav ul {
+    grid-area: hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+} */

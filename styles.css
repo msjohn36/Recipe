@@ -76,6 +76,8 @@ table {
 h1 {
     font-family: var(--font-heading);
     font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 h2 {
     font-family: var(--font-heading);
@@ -84,6 +86,21 @@ h2 {
 h3 {
     font-family: var(--font-heading);
     font-size: 25px;
+}
+nav a, nav span, menu li, #social li, footer{
+    font-family: var(--font-heading);
+    font-size: 20px;
+}
+p, dd, li, nav, input  {
+    font-family: var(--font-text);
+    font-size: 16px;
+}
+dt {
+    font-family: var(--font-text-bold);
+    font-size: 16px;
+}
+#street-taco {
+    display: flex;
 }
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/

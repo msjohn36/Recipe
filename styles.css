@@ -142,6 +142,11 @@ p {
     font-weight: bold;
     letter-spacing: -0.5px;
 }
+#recipe ul {
+    padding: 15px;
+    margin: 15px;
+    
+}
 aside {
     background-color: var(--teal);
     margin-left: 20px;

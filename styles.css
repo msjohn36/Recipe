@@ -1,7 +1,7 @@
  /* -------------------- CSS BY NAME -------------------------------------- */
             /* Mindy Johnston */
     /* -------------------- IMPORTED FONTS -------------------------------------- */
-    @import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
     /*-------------------- CSS REST ---------------------------------------------------*/
     /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -78,10 +78,10 @@ h1 {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     font-stretch: 25%;
     text-align: center;
-    padding: 100px;
+    padding-top: 100px;
 }
 h2 {
     font-family: var(--font-heading);
@@ -111,11 +111,36 @@ header, .menu, main, footer {
 menu {
     display: flex;
     list-style: none;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 15px;
 }
-menu li span {
+menu a {
+    text-decoration: none;
+    color: var(--orange);
+}
+p {
+    padding: 10px;
+    line-height: 1.25;
+}
+#recipe h2 {
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1.5;
+    text-align: center;
+}
+#recipe div {
     display: flex;
-    flex-direction: column;
-    
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 5px;  
+}
+#recipe dt {
+    font-weight: bold;
+    letter-spacing: -0.5px;
 }
 aside {
     background-color: var(--teal);

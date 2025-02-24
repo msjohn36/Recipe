@@ -13,15 +13,15 @@
 <header>
     <h1>Street Tacos</h1>
 </header>
-<section class="menu">
+<div class="menu">
         <menu>
-            <li><a href="#"><span>Save</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <li><a href="#">Save<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
                 <polyline points="7 11 12 16 17 11" />
                 <line x1="12" y1="4" x2="12" y2="16" />
               </svg></a></li>
-            <li><a href="#"><span>Share</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <li><a href="#">Share<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <circle cx="6" cy="12" r="3" />
                 <circle cx="18" cy="6" r="3" />
@@ -29,13 +29,13 @@
                 <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
                 <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
               </svg></a></li>
-            <li><a href="#"><span>Print</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <li><a href="#">Print<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
                 <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
                 <rect x="7" y="13" width="10" height="8" rx="2" />
               </svg></a></li>
-            <li><a href="#recipe"><span>Jump to Recipe</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-symlink" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <li><a href="#recipe">Jump to Recipe<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-symlink" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M4 21v-4a3 3 0 0 1 3 -3h5" />
                 <path d="M9 17l3 -3l-3 -3" />
@@ -46,22 +46,37 @@
         <div>
             <img src="images/street-tacos.png" alt="street-tacos">
         </div>
-</section>
+    </div>
 <main>
-    <section>
+    <div>
         <p>Street tacos are delicious, amazing, and oh so mouthwatering! Bite into tender steak, zesty lime flavor with a hint of spice and add on tomatoes, avocado, and onions for a savory bite you are going to love!</p>
 
         <p>These street tacos are completely jam-packed with flavor and they are so easy to make. I love how the meat is so tender and juicy and only takes an hour to marinate! If you absolutely love tacos like me, try out these other amazing taco recipes! These taco-stuffed avocados, Baja fish tacos, and ground beef tacos will not disappoint!!</p>
-    </section>
+    </div>
     <section id="recipe">
         <h2>Details</h2>
-            <ul>
-                <li>Prep Time: 10 minutes</li>
-                <li>Cook Time: 10 minutes</li>
-                <li>Total Time: 20 minutes</li>
-                <li>Author: Taco Cheesington</li>
-                <li>Servings: 6 Tacos</li>
-            </ul>
+            <dl>
+                <div>
+                    <dt>Prep Time</dt>
+                    <dd>10 minutes</dd>
+                </div>
+                <div>
+                    <dt>Cook Time</dt>
+                    <dd>10 minutes</dd>
+                </div>
+                <div>
+                    <dt>Total Time</dt>
+                    <dd>20 minutes</dd>
+                </div>
+                <div>
+                    <dt>Author</dt>
+                    <dd>Taco Cheesington</dd>
+                </div>
+                <div>
+                    <dt>Servings</dt>
+                    <dd>6 Tacos</dd>
+                </div>
+            </dl>
         <h2>Ingredients</h2>
             <ul>
                 <li>Flank steak</li>

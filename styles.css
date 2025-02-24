@@ -78,6 +78,10 @@ h1 {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: -1px;
+    font-stretch: 25%;
+    text-align: center;
+    padding: 100px;
 }
 h2 {
     font-family: var(--font-heading);
@@ -99,43 +103,24 @@ dt {
     font-family: var(--font-text-bold);
     font-size: 16px;
 }
-#street-taco {
+header, .menu, main, footer {
+    background-color: var(--white);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+menu {
     display: flex;
+    list-style: none;
 }
+aside {
+    background-color: var(--teal);
+    margin-left: 20px;
+    margin-right: 20px;
 }
- /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
-  /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav {
+/* div img {
+     width: 50px;
+} */
+nav {
     grid-area: nav;
     min-width: 414px;
     background-color: #ffffff;
@@ -192,4 +177,37 @@ nav h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
-} */
+}
+}
+ /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
+  /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

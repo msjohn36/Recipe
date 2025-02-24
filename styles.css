@@ -112,14 +112,20 @@ menu {
     display: flex;
     list-style: none;
 }
+menu li span {
+    display: flex;
+    flex-direction: column;
+    
+}
 aside {
     background-color: var(--teal);
     margin-left: 20px;
     margin-right: 20px;
 }
-/* div img {
-     width: 50px;
-} */
+div img {
+     width: 100%;
+     height: auto;
+}
 nav {
     grid-area: nav;
     min-width: 414px;

@@ -121,14 +121,18 @@ menu a {
     text-decoration: none;
     color: var(--orange);
 }
+div img {
+    width: 100%;
+    height: auto;
+}
 p {
     padding: 10px;
     line-height: 1.25;
 }
 #recipe h2 {
-    /* font-weight: bold; */
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     line-height: 1.5;
     text-align: center;
 }
@@ -144,17 +148,23 @@ p {
 }
 #recipe ul {
     padding: 15px;
-    margin: 15px;
-    
+    margin: 15px; 
+    line-height: 1.5; 
+}
+ol {
+    line-height: 1.5;
+}
+ol li {
+    padding: 5px;
+    margin: 5px;
 }
 aside {
     background-color: var(--teal);
     margin-left: 20px;
     margin-right: 20px;
 }
-div img {
-     width: 100%;
-     height: auto;
+aside h2 {
+    text-align: center;
 }
 nav {
     grid-area: nav;

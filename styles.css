@@ -103,10 +103,12 @@ dt {
     font-family: var(--font-text-bold);
     font-size: 16px;
 }
-header, .menu, main, footer {
+header, main, footer {
     background-color: var(--white);
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 10px;
+    
 }
 menu {
     display: flex;
@@ -117,6 +119,7 @@ menu {
     letter-spacing: -1px;
     padding: 15px;
 }
+
 menu a {
     text-decoration: none;
     color: var(--orange);
@@ -129,32 +132,37 @@ p {
     padding: 10px;
     line-height: 1.25;
 }
-#recipe h2 {
+.recipe h2, .ingredients h2, .directions h2 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -1px;
     line-height: 1.5;
     text-align: center;
 }
-#recipe div {
+.recipe div {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    padding: 5px;  
+    padding: 3px; 
+    margin-left: 15px; 
 }
-#recipe dt {
+.recipe dt {
     font-weight: bold;
     letter-spacing: -0.5px;
 }
-#recipe ul {
-    padding: 15px;
-    margin: 15px; 
-    line-height: 1.5; 
+.ingredients ul {
+    list-style-type: square;
+    padding: 20px; 
 }
-ol {
-    line-height: 1.5;
+.ingredients li{
+    padding: 10px;
 }
-ol li {
+
+.directions ol {
+    list-style-type: number;
+    padding-left: 20px;
+}
+.directions ol li {
     padding: 5px;
     margin: 5px;
 }
@@ -162,9 +170,48 @@ aside {
     background-color: var(--teal);
     margin-left: 20px;
     margin-right: 20px;
+    padding: 15px;
 }
 aside h2 {
     text-align: center;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+aside h3 {
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+aside a {
+    text-decoration: none;
+    color: var(--Black); 
+}
+.rice, .salsa, .guac, .tortilla {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px;
+    gap: 10px;
+}
+.rice img, .salsa img, .guac img, .tortilla img {
+    width: 125px;
+    height: auto;
+}
+.rice dt, .salsa dt, .guac dt, .tortilla dt {
+    font-weight: bold;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.svg {
+    display: flex;
+    gap: 15px;
+}
+
+aside h4, aside dd {
+    visibility: hidden;
 }
 nav {
     grid-area: nav;

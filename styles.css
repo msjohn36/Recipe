@@ -128,7 +128,7 @@ div img {
     width: 100%;
     height: auto;
 }
-p {
+main p {
     padding: 10px;
     line-height: 1.25;
 }
@@ -270,6 +270,41 @@ nav h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
+}
+form {
+position: fixed;
+z-index: 3;
+top: 50px;
+right: 250px;
+}
+button {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.social {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 15px;
+    color: var(--orange);
+}
+footer h2, footer h3 {
+    visibility: hidden;
+}
+footer img {
+    width: 300px;
+    height: auto;  
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 15px;
 }
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/

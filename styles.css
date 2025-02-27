@@ -209,7 +209,6 @@ aside a {
     display: flex;
     gap: 15px;
 }
-
 aside h4, aside dd {
     visibility: hidden;
 }
@@ -271,15 +270,16 @@ nav h2 {
     height: 1px;
     width: 1px;
 }
+
 form {
 position: fixed;
 z-index: 3;
 top: 50px;
 right: 250px;
+border: solid var(--orange);
 }
-button {
+form svg {
     background-color: var(--orange);
-    color: var(--white);
 }
 .social {
     display: flex;
@@ -295,12 +295,16 @@ footer h2, footer h3 {
     visibility: hidden;
 }
 footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
-    height: auto;  
+    height: auto; 
 }
-footer div {
+.foot {
     display: flex;
     flex-direction: column;
+    position: absolute;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -308,6 +312,9 @@ footer div {
 }
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
+ @media screen and (min-width: 768px) {
+
+ }
   /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
 
 

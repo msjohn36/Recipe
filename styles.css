@@ -225,7 +225,7 @@ aside h4, aside dd {
 }
 nav {
     grid-area: nav;
-    min-width: 414px;
+    min-width: 25px;
     background-color: #ffffff;
     box-shadow: 0px 3px 3px #bbb;
     position: fixed;
@@ -304,8 +304,8 @@ form {
     flex-wrap: wrap;
     position: absolute;
     z-index: 3;
-    top: 50px;
-    right: 250px;
+    top: 60px;
+    right: 200px;
     margin-top: 20px;
 }
 form svg {
@@ -360,16 +360,72 @@ footer {
  @media screen and (min-width: 768px) {
  header h1 {
     text-align: left;
+    margin-top: 50px;
  }
  menu {
     padding: 30px;
  }
- menu img {
-   
+ .head {
+    position: relative;
+    display: inline-block;
  }
+ menu {
+    position: absolute;
+    /* margin-top: 15px; */
+    width: 100%;
+    top: 0;
+    display: flex;
+    background-color: var(--white);  
+ }
+
+ nav a {
+    color: var(--orange);
+}
+ nav #logo {
+    top: 0;
+    left: 0;
+    padding: 5px 45px 0 45px;
+}
+nav #sign-in {
+    left: 535px;
+    padding: 5px 35px 0 45px;
+}
+nav li img {
+    display: flex;
+    width: 75px;
+}
+#breakfast {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    color: var(--orange);
+}
+#brunch {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    margin-left: 30px;
+    color: var(--orange);
+}
+form {
+    top: 0;
+}
  }
   /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
-
+  @media screen and (min-width: 1280px) {
+    header h1 {
+        text-align: center;
+        margin-top: 30px;
+     }
+  }
 
 
 

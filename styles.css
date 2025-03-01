@@ -360,7 +360,7 @@ footer {
  @media screen and (min-width: 768px) {
  header h1 {
     text-align: left;
-    margin-top: 50px;
+    margin-top: 70px;
  }
  menu {
     padding: 30px;
@@ -371,13 +371,11 @@ footer {
  }
  menu {
     position: absolute;
-    /* margin-top: 15px; */
     width: 100%;
     top: 0;
     display: flex;
     background-color: var(--white);  
  }
-
  nav a {
     color: var(--orange);
 }
@@ -387,7 +385,7 @@ footer {
     padding: 5px 45px 0 45px;
 }
 nav #sign-in {
-    left: 535px;
+    position: fixed;
     padding: 5px 35px 0 45px;
 }
 nav li img {
@@ -402,21 +400,88 @@ nav li img {
     text-transform: uppercase;
     letter-spacing: -1px;
     padding: 35px;
+    margin: 30px;
     color: var(--orange);
 }
 #brunch {
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 150px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -1px;
     padding: 35px;
-    margin-left: 30px;
+    margin: 30px;
+    color: var(--orange);
+}
+#lunch {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    margin: 30px;
+    color: var(--orange);
+}
+#dinner {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    margin: 30px;
+    color: var(--orange);
+}
+#appetizers {
+    position: absolute;
+    top: 50%;
+    left: 450px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    margin: 30px;
+    color: var(--orange);
+}
+#dessert {
+    position: absolute;
+    top: 50%;
+    left: 600px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    margin: 30px;
+    color: var(--orange);
+}
+#beverage {
+    position: absolute;
+    top: 50%;
+    left: 700px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 35px;
+    padding-left: 60px;
+    margin: 30px;
     color: var(--orange);
 }
 form {
     top: 0;
+}
+.recipe div {
+    justify-content: center;
+}
+.ingredients, .directions h2 {
+    text-align: left;
+}
+.i-d {
+    display: flex;
+    flex-wrap: wrap;
 }
  }
   /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/

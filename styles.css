@@ -95,10 +95,14 @@ table {
         font-family: var(--font-heading);
         font-size: 20px;
     }
-    #social {
+    .social {
         font-family: var(--font-heading);
         font-size: 20px;
     }
+    footer li div {
+        font-family: var(--font-heading);
+        font-size: 30px;
+    } 
     footer {
         font-family: var(--font-heading);
         font-size: 20px;
@@ -226,9 +230,42 @@ table {
         border: 2px solid var(--orange);
         padding: 10px 40px 10px;
     }
-    
     footer {
         background-color: var(--white);
+    }
+    footer h2, footer h3 {
+        visibility: hidden;
+    }
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        color: var(--orange);
+    
+    }
+    .social li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .eats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: auto; 
+        margin: 10px;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
     nav {
         grid-area: nav;
@@ -288,6 +325,32 @@ table {
         height: 1px;
         width: 1px;
     }
+    nav #logo {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--orange);
+        position: fixed;
+        box-shadow: 0px 3px 3px #bbb;
+        z-index: 1000;
+        top: 0;
+        left: 17%;
+        padding: 0 180px 0 180px;
+    }
+    nav #sign-in {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        position: fixed;
+        box-shadow: 0px 3px 3px #bbb;
+        z-index: 1000;
+        top: 0;
+        left: 70%;
+        padding: 20px 20px 0 20px;
+    } 
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
  @media screen and (min-width: 768px) {

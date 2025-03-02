@@ -54,10 +54,10 @@ table {
 
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 :root {
-    font-family: "Montserrat", sans-serif;
-    --font-heading: "Bebas Neue-Regular" sans-serif;
-    --font-text: "Montserrat-Regular", sans-serif;
-    --font-text-bold: "Montserrat-Bold", sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-text: 'Montserrat', sans-serif;
+    --font-text-bold: 'Montserrat', sans-serif;
     font-size: 16px;
     --Black :#0D0D0D;
     --white :#F2F2F2;
@@ -73,7 +73,170 @@ table {
      margin-right: 50px;
      margin-left: 50px;   
     }
-
+    h1 {
+        font-family: var(--font-heading);
+        font-size: 40px;
+        text-align: center;
+        margin-top: 75px;
+    }
+    h2 {
+        font-family: var(--font-heading);
+        font-size: 30px;
+    }
+    h3 {
+        font-family: var(--font-heading);
+        font-size: 25px;
+    }
+    nav a, nav span {
+        font-family: var(--font-heading);
+        font-size: 20px;
+    }
+    menu li {
+        font-family: var(--font-heading);
+        font-size: 20px;
+    }
+    #social {
+        font-family: var(--font-heading);
+        font-size: 20px;
+    }
+    footer {
+        font-family: var(--font-heading);
+        font-size: 20px;
+    }
+    p, dd, li, nav, input {
+        font-family: var(--font-text);
+        font-size: 16px;
+        font-weight: 400;
+    }
+    dt {
+        font-family: var(--font-text-bold);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    header {
+        background-color: var(--white);
+    }
+    menu {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        color: var(--orange);
+        background-color: var(--white);
+    }
+    menu li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    menu a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: var(--orange);
+    }
+    main {
+        background-color: var(--white);
+        padding: 10px;
+    }
+    div img {
+        width: 100%;
+        height: auto;
+    } 
+    main p {
+        padding: 10px;
+        line-height: 1.25;
+    }
+    .recipe h2, .ingredients h2, .directions h2{
+        display: flex;
+        justify-content: center;
+    } 
+     .recipe dl div {
+        display: flex;
+        justify-content: left;
+        padding: 7px 7px;
+     }   
+     .recipe dt {
+        margin-right: 10px;
+     } 
+     .ingredients ul {
+        list-style-type: square;
+        padding: 20px; 
+     } 
+     .directions ol {
+        list-style-type: number;
+        padding-left: 20px;
+     }
+     .directions ol li {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    aside {
+        background-color: var(--teal);
+    }
+    footer {
+        background-color: var(--white);
+    }
+    nav {
+        grid-area: nav;
+        min-width: 414px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 3px #bbb;
+        position: fixed;
+        top: 0;
+        z-index:5;
+    }
+    nav ul {
+        grid-area: hamberger;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        max-height: 0;
+    }
+    nav li img {
+        display: none;
+    }
+    nav li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+    nav label {
+        cursor: pointer;
+        display: inline-block;
+        user-select: none;
+        position: relative;
+        bottom: 5px;
+        left: 30px;
+    }
+    nav span {
+        display: block;
+        position: relative;
+     }
+    nav label svg {
+        display: block;
+    }
+    label span:before, label span:after {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    nav input {
+        display: none;
+    }
+    nav input:checked ~ ul {
+        max-height: 550px;
+    }
+    nav h2 {
+        visibility: hidden;
+        height: 1px;
+        width: 1px;
+    }
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
  @media screen and (min-width: 768px) {

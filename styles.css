@@ -78,6 +78,7 @@ table {
         font-size: 40px;
         text-align: center;
         margin-top: 75px;
+        padding-top: 20px;
     }
     h2 {
         font-family: var(--font-heading);
@@ -218,7 +219,7 @@ table {
         z-index: 3;
         top: 60px;
         right: 200px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     form svg {
         background-color: var(--orange);
@@ -328,41 +329,55 @@ table {
         height: 1px;
         width: 1px;
     }
-    nav #logo {
-        display: flex;
-        flex: 2;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--orange);
-        position: fixed;
-        box-shadow: 0px 3px 3px #bbb;
-        z-index: 1000;
-        top: 0;
-        left: 20%;
-        width: 400px;
-        height: 40px;
-    }
-    nav #sign-in {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--white);
-        position: fixed;
-        box-shadow: 0px 3px 3px #bbb;
-        z-index: 1000;
-        top: 0;
-        left: 80%;
-        width: 60px;
-        height: 40px;
-        text-align: center;
-        color: var(--Black);
-    } 
-    #sign-in svg {
-        width: 20px;
-        height: 20px;
-    } 
-   
+   nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 85%;
+   }
+   nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+   }
+   nav li:nth-of-type(n+2):nth-last-of-type(n=
+   +8) {
+    display: none;
+   }
+   #logo {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 100px;
+    width: 60px;
+    height: 40px;
+    margin-left: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: var(--orange);
+   }
+   #sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    position: fixed;
+    box-shadow: 0px 3px 3px #bbb;
+    z-index: 1000;
+    top: 0;
+    left: 75%;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    color: var(--Black);
+   }
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
  @media screen and (min-width: 768px) {
@@ -371,26 +386,7 @@ table {
     margin-top: 150px;
     margin-bottom: 30px;
  }
- nav #logo {
-    display: flex;
-    flex: 2;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 40px;
-    margin-left: 50px;
-}
-nav #dropdown{
-    display: none;
-}
-nav #sign-in {
-    position: fixed;
-    right: 1%;
-}
+ 
 form {
     top: 10px;
 }
@@ -441,37 +437,7 @@ menu {
 .eats {
     order: -1;
 }
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    padding-left: 20px;
-    padding-right: 65px;
-     box-shadow: 0px 3px 3px #bbb;
-}
-.nav-menu li {
-    display: inline-block;
-    padding-right: 20px;
-}
-.nav-menu a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.nav-menu a div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.nav-menu img {
-    display: block;
-    width: 60px;
-    height: auto;
-}
-nav a {
-    color: var(--orange);
-}
+
  }
   /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
   @media screen and (min-width: 1280px) {

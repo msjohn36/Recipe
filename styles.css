@@ -239,7 +239,7 @@ table {
     }
     .social {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         color: var(--orange);
     
     }
@@ -287,10 +287,9 @@ table {
         padding: 0;
         margin: 0;
         list-style: none;
-        overflow: hidden;
         max-height: 0;
     }
-    nav li img {
+    #breakfast, #brunch, #lunch, #dinner, #appetizers, #dessert, #beverage {
         display: none;
     }
     nav li a {
@@ -370,9 +369,8 @@ table {
     margin-top: 150px;
     margin-bottom: 30px;
  }
- 
 form {
-    top: 10px;
+    top: -30px;
 }
 .head {
     position: relative;
@@ -412,8 +410,8 @@ menu {
 #foot {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 .social {
     order: 2;
@@ -421,7 +419,58 @@ menu {
 .eats {
     order: -1;
 }
-
+nav {
+    background-color: transparent;
+    box-shadow: none; 
+}
+nav label{
+    display: none;
+}
+nav #logo {
+    top: 0;
+    left: 50px;
+    width: 40px; 
+    height: 40px;
+}
+nav #sign-in {
+    top: 0;
+    left: 34%;
+    width: 60px; 
+    height: 50px;
+}
+#breakfast, #brunch, #lunch, #dinner, #appetizers, #dessert, #beverage {
+    display: flex;
+    flex-direction: column;
+}
+li img {
+    width: 60px; 
+    height: auto;
+}
+nav {
+    position: absolute;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 225px;
+    left: 0;
+    width: 100%;
+}
+nav li {
+    flex: 1;
+    text-align: center;
+}
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 }
   /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
   @media screen and (min-width: 1280px) {

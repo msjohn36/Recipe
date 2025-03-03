@@ -585,19 +585,20 @@ menu {
 .i-d {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    margin-top: 10px;
 }
 .ingredients h2 {
     justify-content: left;
 }
 .sides {
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     text-align: left;
 }
-. div {
+.div {
     flex: 1;
 }
  .rice, .salsa, .guac, .tortilla {
@@ -616,6 +617,7 @@ menu {
 .rice h3, .salsa h3, .guac h3, .tortilla h3 {
     padding-bottom: 20px;
 }
+
 }
 
 

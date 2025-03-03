@@ -279,9 +279,11 @@ table {
         z-index:5;
         width: 100px;
         height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     nav ul {
-        grid-area: hamberger;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -295,6 +297,7 @@ table {
         display: block;
         padding: 20px;
         text-decoration: none;
+        color: var(--orange);
     }
     nav label {
         cursor: pointer;
@@ -304,19 +307,15 @@ table {
         bottom: 5px;
         left: 30px;
     }
+    nav label svg {
+        display: block;
+    }
     nav span {
         display: block;
         position: relative;
      }
-    nav label svg {
+     nav label svg {
         display: block;
-    }
-    label span:before, label span:after {
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        width: 100%;
     }
     nav input {
         display: none;
@@ -329,55 +328,40 @@ table {
         height: 1px;
         width: 1px;
     }
-   nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 50px;
-    width: 85%;
-   }
-   nav ul {
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-   }
-   nav li:nth-of-type(n+2):nth-last-of-type(n=
-   +8) {
-    display: none;
-   }
-   #logo {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 100px;
-    width: 60px;
-    height: 40px;
-    margin-left: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    background-color: var(--orange);
-   }
-   #sign-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    position: fixed;
+    nav #logo {
+        background-color: var(--orange);
+        box-shadow: 0px 3px 3px #bbb;
+        position: fixed;
+        top: 0;
+        left: 150px;
+        z-index: 4;
+        width: 350px;
+        height: 40px;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo svg {
+        width: 60px;
+        height: 60px;
+    }
+   nav #sign-in {
+    background-color: #ffffff;
     box-shadow: 0px 3px 3px #bbb;
-    z-index: 1000;
+    position: fixed;
+    margin-left: 420px;
     top: 0;
-    left: 75%;
-    width: 80px;
+    z-index:5;
+    width: 85px;
     height: 40px;
-    text-align: center;
-    color: var(--Black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
+   #sign-in svg {
+    width: 40px;
+    height: 40px;
+}
 }
  /*-------------------- MEDIA QUERY (Medium- min-width: 768px) --------------------------------*/
  @media screen and (min-width: 768px) {
@@ -438,7 +422,7 @@ menu {
     order: -1;
 }
 
- }
+}
   /*-------------------- MEDIA QUERY (Large- min-width: 1280px) ------------------------------------*/
   @media screen and (min-width: 1280px) {
     header h1 {
@@ -448,12 +432,7 @@ menu {
      form {
         top: 50%;
     }
-    .nav-menu {
-        top: 0;
-        padding-left: 60px;
-        padding-right: 65px;
-        
-    }
+   
   }
 
 

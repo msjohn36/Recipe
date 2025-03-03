@@ -625,7 +625,18 @@ menu {
 .rice h3, .salsa h3, .guac h3, .tortilla h3 {
     padding-bottom: 20px;
 }
-
+.foot {
+    margin-left: -90px;
+    margin-bottom: 120px;
+}
+.eats {
+    display: flex;
+    flex-direction: row;
+}
+.img {
+    width: 200px;
+    height: auto;    
+}
 }
 
 

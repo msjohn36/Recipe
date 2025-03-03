@@ -239,7 +239,7 @@ table {
     }
     .social {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         color: var(--orange);
     
     }
@@ -554,6 +554,14 @@ menu {
     margin-left: 150px;
     width: 362px; 
 }
+.p {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 550px;
+    margin-top: -550px;
+    margin-bottom: 380px;
+    
+}
 .recipe {
     display: flex;
     flex-wrap: wrap;
@@ -564,7 +572,7 @@ menu {
     width: 100%;
     text-align: center;
     padding: 10px;
-    left: 0;
+    margin-left: -10px;
 }
 .recipe div {
     flex: 1;

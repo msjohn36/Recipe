@@ -200,7 +200,7 @@ table {
         color: var(--Black); 
     }
     aside h4, aside dd {
-        visibility: hidden;
+        display: none;
     }
     .rice img, .salsa img, .guac img, .tortilla img {
         width: 125px;
@@ -398,14 +398,10 @@ menu {
 .i-d {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
 }
 .sides {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
 }
 #foot {
     display: grid;
@@ -419,10 +415,15 @@ menu {
 .eats {
     order: -1;
 }
+.img {
+    width: 200px;
+    height: auto;
+}
 nav {
     background-color: transparent;
     box-shadow: none; 
 }
+
 nav label{
     display: none;
 }
@@ -431,16 +432,19 @@ nav #logo {
     left: 50px;
     width: 40px; 
     height: 40px;
+    box-shadow: none; 
 }
 nav #sign-in {
     top: 0;
-    left: 34%;
+    left: 33%;
     width: 60px; 
     height: 50px;
+    box-shadow: none; 
 }
 #breakfast, #brunch, #lunch, #dinner, #appetizers, #dessert, #beverage {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 2px 0.5px #bbb; 
 }
 li img {
     width: 60px; 
@@ -476,13 +480,143 @@ nav a div {
   @media screen and (min-width: 1280px) {
     header h1 {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 120px;
      }
      form {
-        top: 50%;
+        top: 90px;
+        margin-right: 275px;
     }
-   
+    nav {
+        position: absolute;
+        top: 0;
+        left: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100px;
+        box-shadow: 0px 2px 0.5px #bbb;
+         
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a div {
+        position: absolute;
+        left: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    nav #sign-in {
+        position: absolute;
+        left: 680px;
+        width: 85px;
+        height: 60px;
+        box-shadow: 0px 2px 0.5px #bbb; 
+    }
+    nav #logo {
+        position: absolute;
+        left: 10px;
+        height: 60px;
   }
+  #breakfast, #brunch, #lunch, #dinner, #appetizers, #dessert, #beverage {
+   margin-top: -210px;
+   box-shadow: none;
+}
+.head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.menu-list{
+    border: 2px solid var(--orange);
+}
+menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+.taco {
+    margin-left: 150px;
+    width: 362px; 
+}
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Black);
+    color: var(--teal);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+}
+.recipe div {
+    flex: 1;
+}
+.recipe dl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.recipe dl div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.i-d {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.ingredients h2 {
+    justify-content: left;
+}
+.sides {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+. div {
+    flex: 1;
+}
+ .rice, .salsa, .guac, .tortilla {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rice img, .salsa img, .guac img, .tortilla img{
+    width: 225px;
+    height: auto; 
+}
+.rating {
+    display: flex;
+    padding-top: 20px;
+}
+.rice h3, .salsa h3, .guac h3, .tortilla h3 {
+    padding-bottom: 20px;
+}
+}
 
 
 
